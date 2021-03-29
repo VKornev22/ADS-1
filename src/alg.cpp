@@ -11,11 +11,12 @@ int cbinsearch(int *arr, int size, int value) {
     right = midd;
   }
 
-  while (arr[left] == value)
+  while (arr[left] == value) {
     c++;
     left++;
   }
   if (c != 0)
     return c;
+  else
   return 0; // если ничего не найдено
 }
